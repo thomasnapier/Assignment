@@ -1,4 +1,5 @@
-ul {
+/*Navigation Styles*/
+ul.a {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,11 +8,12 @@ ul {
     border-radius: 25px;
 }
 
-li{
+li.a{
     float: left;
-    padding-left: 12.25%;
-    padding-right: 12.25%;
+    padding-left: 5%;
+    padding-right: 5%;
     border-left: solid black;
+    display: block;
 }
 
 li a {
@@ -22,25 +24,45 @@ li a {
     text-decoration: none;
 }
 
-li:first-child{
+li.a:hover{
+    background-color: dimgrey;
+}
+
+li.a:first-child{
     border-left:none;
 
 }
 
+.nav{
+    border: solid black;
+    margin: auto;
+    width: 731px;
+    border-radius: 25px;
+    margin-top: 0.5%;
+    font-family: Verdana,Geneva,sans-serif;
+}
+
+/*End of navigation styles*/
+
+/*Body Styles*/
 body {
     border: solid black;
     background-color: gold;
 }
+/*End of body styles*/
 
+/*Footer styles*/
 footer{
     background-image: url("images/sand.jpg");
-    background-repeat: no-repeat;
+    background-repeat: inherit;
     padding-top: 3%;
     padding-bottom: 3%;
     margin: auto;
-    width: 50%;
+    width: 100%;
 }
+/*End of footer styles*/
 
+/*Header styles*/
 .logo {
     border: solid black;
     width: 100%;
@@ -53,64 +75,97 @@ footer{
 .title{
     margin: 0;
     padding: 0;
+    font-variant: small-caps;
+    font-weight: bold;
 }
+/*End of header styles*/
 
+/*Center styles*/
 .center{
     margin:auto;
-    width: 20%;
-    border: solid black;
+    width: 50%;
     text-align: center;
     font-size: 200%;
     font-variant: small-caps;
     font-weight: 500;
     background-image: url("./images/jump.jpg");
-    padding: 15%;
+    padding: 25%;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
 }
+/*End of center styles*/
 
-.nav{
-    border: solid black;
-    margin: auto;
-    width: 70%;
-    border-radius: 25px;
-    margin-top: 0.5%;
-}
 
-header{
-
-}
-
+/*Goal styles*/
 .action {
     border: solid black;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
     padding-top:0;
-    padding-bottom: 0.5%;
+    padding-bottom: 1%;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     font-size: 300%;
     background-color: dodgerblue;
     border-radius: 25px;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
 }
 
 .button {
-    background-color: white; /* Green */
+    background-color: white;
     border: solid black;
     color: black;
     padding: 8px 16px;
     text-align: center;
     font-size: 80%;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .button:hover {
-    background-color: gold; 
+    background-color: gold;
     color: white;
 }
+/*End of goal styles*/
+
+/*Announcement section styles*/
+.announce{
+    border: solid black;
+    border-radius: 100px;
+    width: 15%;
+    margin-left: 2%;
+    margin-top: -32%;
+    margin-bottom: 30%;
+    text-align: center;
+    font-size: 120%;
+    background-color: dodgerblue;
+    padding-right: 1.5%;
+    font-family: Verdana,Geneva,sans-serif;
+}
+
+.container{
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+li.b{
+    padding-right: 5%;
+    display: block;
+}
+
+li.b a {
+    list-style: none;
+}
+
+li.b:first-child{
+    font-variant: small-caps;
+}
+/*End of announcement section styles*/

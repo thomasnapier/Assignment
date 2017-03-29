@@ -1,0 +1,113 @@
+/*Navigation Styles*/
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 25px;
+}
+
+li.a{
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-left: solid black;
+    display: block;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.a:hover{
+    background-color: dimgrey;
+}
+
+li.a:first-child{
+    border-left:none;
+
+}
+
+.nav{
+    border: solid black;
+    margin: auto;
+    width: 731px;
+    border-radius: 25px;
+    margin-top: 0.5%;
+    font-family: Verdana,Geneva,sans-serif;
+}
+
+/*End of navigation styles*/
+
+/*Header styles*/
+.logo {
+    width: 100%;
+    background-color: dodgerblue;
+    font-size: 250%;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+/*End of header styles*/
+
+/*html styles*/
+html{
+    background-color: white;
+}
+/*End of html styles*/
+
+/*Body Styles*/
+body {
+    border: solid black;
+    background-color: gold;
+    margin: 1.5%;
+    border-radius: 25px;
+}
+/*End of body styles*/
+
+/*Footer styles*/
+footer{
+    background-image: url("images/sand.jpg");
+    background-repeat: inherit;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 0px 0px 25px 25px;
+}
+/*End of footer styles*/
+
+.container{
+    border: solid black;
+    width:50%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius:25px;
+    background-color: dodgerblue;
+}
+
+.title1 {
+    font-size: 250%;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 150%;
+    text-align: center;
+
+
+}

@@ -68,7 +68,6 @@ footer{
 
 /*Header styles*/
 .logo {
-    border: solid black;
     width: 100%;
     background-color: dodgerblue;
     font-size: 250%;
@@ -131,6 +130,7 @@ footer{
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -172,7 +172,7 @@ li.b a {
 
 li.b:first-child{
     font-variant: small-caps;
-    font-size: 120%;
+    font-size: 130%;
     display: block;
 }
 /*End of announcement section styles*/
@@ -208,11 +208,51 @@ th, td {
 
 p.stand{
     font-variant: small-caps;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: bold;
 }
 /*End of table styles*/
 
+/*html styles*/
 html{
     background-color: white;
 }
+/*End of html styles*/
+
+/*Links styles*/
+
+.links {
+    border: solid black;
+    width: 15%;
+    border-radius: 100px;
+    text-align: center;
+    background-color: dodgerblue;
+    margin-top:-32%;
+    margin-right: 2%;
+    float: right;
+    font-size: 120%;
+    font-family: Verdana,Geneva,sans-serif;
+    padding:1.5%;
+    padding-top:0.5%;
+}
+
+.button1 {
+    background-color: white;
+    border: solid black;
+    color: black;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 80%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button1:hover {
+    background-color: gold;
+    color: white;
+}
+
+/*End of links styles*/

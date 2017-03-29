@@ -48,6 +48,8 @@ li.a:first-child{
 body {
     border: solid black;
     background-color: gold;
+    margin: 1.5%;
+    border-radius: 25px;
 }
 /*End of body styles*/
 
@@ -59,6 +61,8 @@ footer{
     padding-bottom: 3%;
     margin: auto;
     width: 100%;
+    margin-top: 5%;
+    border-radius: 0px 0px 25px 25px;
 }
 /*End of footer styles*/
 
@@ -69,7 +73,7 @@ footer{
     background-color: dodgerblue;
     font-size: 250%;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .title{
@@ -84,9 +88,10 @@ footer{
 .center{
     margin:auto;
     width: 50%;
-    text-align: center;
-    font-size: 200%;
-    font-variant: small-caps;
+    text-align: inherit;
+    font-size: 300%;
+    color:dodgerblue;
+    font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
     font-weight: 500;
     background-image: url("./images/jump.jpg");
     padding: 25%;
@@ -147,10 +152,10 @@ footer{
     background-color: dodgerblue;
     padding-right: 1.5%;
     font-family: Verdana,Geneva,sans-serif;
+    display: block;
 }
 
 .container{
-    margin-bottom: 2%;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -167,5 +172,47 @@ li.b a {
 
 li.b:first-child{
     font-variant: small-caps;
+    font-size: 120%;
+    display: block;
 }
 /*End of announcement section styles*/
+
+/*Table styles*/
+
+.ladder{
+    border: solid black;
+    border-radius: 25px;
+    background-color: white;
+    border-collapse: collapse;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 1.5%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 110%;
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+
+}
+.container1{
+    margin-top: -25%;
+}
+
+p.stand{
+    font-variant: small-caps;
+    font-size: 150%;
+    font-weight: bold;
+}
+/*End of table styles*/
+
+html{
+    background-color: white;
+}

@@ -21,7 +21,7 @@
          </ul>
     </div>
   <div class="action">
-      <p><em>Sign up</em> to join us now</p><a class="button" onclick="OpenPopUp()">Sign Up</a>
+      <p><em>Sign up</em> your team here</p><a class="button" onclick="OpenPopUp()">Sign Up</a>
   </div>
   <div class="container">
       <div class="body">
@@ -43,10 +43,39 @@
           <li class="b"><p>New season starts on the <b>21st of August.</b></p></li>
       </ul>
   </div>
-  <div id="popup_bg">
+  <div id="popup">
       <div id="popup_main_div">
           <p id="heading">Sign Up</p>
-          <p id="form"></p>
+          <form>
+              <div class="form">
+                  <p><em>* fields are required</em></p>
+              <p>Contact person name: *</p><input type="text" id="name" placeholder="Your Name" required="required"2 tabindex="1" autofocus>
+              <p>Contact phone number: *</p><input type="tel" id="phone" placeholder="Your Number" required="required" tabindex="2">
+              <p>Contact email address: *</p><input type="email" id="email" placeholder="Your Email" required="required" tabindex="3">
+              <p>Competition day: *</p><select id="select" required tabindex="4">
+              <option selected></option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+          </select>
+              <p>Competition time: *</p><select id="select1" required tabindex="5">
+              <option selected></option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+          </select>
+              <p>Have you read and do you agree to <a class="button" onclick="OpenGuideLines()">our playing guidelines</a>?</p>
+                  <label>
+                      <input type="checkbox" required="required">
+                  </label>
+              </div>
+              <p id="hidden">Participants in Slammers Beach Volleyball play at their own risk. Anyone playing is responsible for their own safety and should only play if they are capable. Check with your doctor before you begin.
+Game fees must be paid prior to the start of the game. Games may be cancelled by players up to 4 hours before hand to get a refund. Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.
+</p>
+              <input type="submit" name="submit" value="Submit" class="button3">
+          </form>
             <div id="close_popup_div" onclick="ClosePopUp()">
                 <p>X</p>
             </div>
@@ -54,11 +83,21 @@
   </div>
   <script type="text/javascript">
       function OpenPopUp() {
-          document.getElementById("popup_bg").style.display="block";
+          document.getElementById("popup").style.display="block";
       }
 
       function ClosePopUp() {
-          document.getElementById("popup_bg").style.display="none";
+          document.getElementById("popup").style.display="none";
+      }
+  </script>
+  <script type="text/javascript">
+      function OpenGuideLines() {
+          var show = document.getElementById("hidden");
+          if (show.style.display === "none") {
+              show.style.display = "block";
+          } else {
+              show.style.display = "none";
+          }
       }
   </script>
   <div class="container1">

@@ -4,7 +4,7 @@ ul.a {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: gold;
     border-radius: 25px;
 }
 
@@ -25,7 +25,7 @@ li a {
 }
 
 li.a:hover{
-    background-color: dimgrey;
+    background-color: dodgerblue;
 }
 
 li.a:first-child{
@@ -35,11 +35,11 @@ li.a:first-child{
 
 .nav{
     border: solid black;
-    margin: auto;
     width: 731px;
     border-radius: 25px;
-    margin-top: 0.5%;
+    margin: 0.5% auto auto;
     font-family: Verdana,Geneva,sans-serif;
+    cursor: pointer;
 }
 
 /*End of navigation styles*/
@@ -63,14 +63,14 @@ li.a:first-child{
 
 /*html styles*/
 html{
-    background-color: white;
+    background-color: gold;
 }
 /*End of html styles*/
 
 /*Body Styles*/
 body {
     border: solid black;
-    background-color: gold;
+    background-color: white;
     margin: 1.5%;
     border-radius: 25px;
 }
@@ -82,10 +82,13 @@ footer{
     background-repeat: inherit;
     padding-top: 3%;
     padding-bottom: 3%;
-    margin: auto;
     width: 100%;
-    margin-top: 5%;
-    border-radius: 0px 0px 25px 25px;
+    margin: 5% auto auto;
+    border-radius: 0 0 25px 25px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 /*End of footer styles*/
 
@@ -110,4 +113,138 @@ footer{
     text-align: center;
 
 
+}
+
+/*Popup styles*/
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#popup_main_div {
+    position: fixed;
+    width: 40%;
+    height: 80%;
+    border:solid black;
+    border-radius: 25px;
+    background-color: gold;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+#close_popup_div{
+    position: absolute;
+    width: 25px;
+    height:25px;
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align: center;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#close_popup_div p {
+    margin-top:3px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#close_popup_div:hover {
+    background-color: gold;
+}
+
+#heading {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 250%;
+    margin-top: 0;
+    padding-top: 2%;
+    padding-bottom:2%;
+    border-radius: 22px 22px 0 0;
+    border-bottom: solid black;
+    background-color: dodgerblue;
+}
+
+#hidden {
+    background-color: white;
+    width:90%;
+    margin: auto;
+    border:solid black;
+    font-size: 90%;
+    display:none;
+    margin-top:3%;
+}
+
+.form {
+    width: 95%;
+    margin-left: 2.5%;
+    text-align:center;
+    margin-top:-5%;
+}
+
+.button3 {
+    border: solid black;
+    width:20%;
+    margin-left:40%;
+    margin-top: 1%;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: 4px 4px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.button3:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+/*Smaller screen styles*/
+
+@media only screen and (max-width: 580px) {
+   #popup_main_div{
+       width: 90%;
+       margin-left: 3%;
+       margin-top: -10%;
+   }
+    .nav{
+        width:80%;
+    }
+
+    li.a {
+        border:none;
+    }
+}
+/*End of popup styles*/
+
+.button {
+    background-color: white;
+    border: solid black;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 80%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: gold;
+    color: white;
 }

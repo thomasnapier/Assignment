@@ -4,14 +4,14 @@ ul.a {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: gold;
     border-radius: 22px;
 }
 
 li.a{
     float: left;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 5.014%;
     border-left: solid black;
     display: block;
 }
@@ -35,11 +35,12 @@ li.a:first-child{
 
 .nav{
     border: solid black;
-    width: 731px;
+    width: 730px;
     border-radius: 25px;
     margin: 0.5% auto auto;
     font-family: Verdana,Geneva,sans-serif;
     cursor: pointer;
+	position: sticky;
 }
 
 /*End of navigation styles*/
@@ -47,7 +48,7 @@ li.a:first-child{
 /*Body Styles*/
 body {
     border: solid black;
-    background-color: gold;
+    background-color: white;
     margin: 1.5%;
     border-radius: 25px;
 }
@@ -62,6 +63,10 @@ footer{
     width: 100%;
     margin: 5% auto auto;
     border-radius: 0 0 25px 25px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 /*End of footer styles*/
 
@@ -136,15 +141,17 @@ footer{
     border: solid black;
     border-radius: 100px;
     width: 15%;
-    margin-left: 2%;
+	height:100%;
+    margin-left: 1%;
     margin-top: -32%;
     margin-bottom: 30%;
     text-align: center;
     font-size: 120%;
     background-color: dodgerblue;
-    padding-right: 1.5%;
     font-family: Verdana,Geneva,sans-serif;
-    display: block;
+    float: left;
+    font-size: 90%;
+    padding: 0.5% 1.5% 1.5%;
 }
 
 .container{
@@ -152,21 +159,6 @@ footer{
     margin-right: 20%;
 }
 
-
-li.b{
-    padding-right: 5%;
-    display: block;
-}
-
-li.b a {
-    list-style: none;
-}
-
-li.b:first-child{
-    font-variant: small-caps;
-    font-size: 130%;
-    display: block;
-}
 /*End of announcement section styles*/
 
 /*Table styles*/
@@ -174,10 +166,11 @@ li.b:first-child{
 .ladder{
     border: solid black;
     border-radius: 25px;
-    background-color: white;
+    background-color: gold;
     border-collapse: collapse;
     width: 50%;
     margin: auto;
+	margin-top:30%;
     text-align: center;
     padding: 1.5%;
 }
@@ -199,7 +192,7 @@ th, td {
 
 p.stand{
     font-variant: small-caps;
-    font-size: 130%;
+    font-size: 110%;
     font-weight: bold;
 }
 
@@ -210,7 +203,7 @@ table{
 
 /*html styles*/
 html{
-    background-color: white;
+    background-color: gold;
 }
 /*End of html styles*/
 
@@ -223,9 +216,9 @@ html{
     text-align: center;
     background-color: dodgerblue;
     margin-top:-32%;
-    margin-right: 2%;
+    margin-right: 1%;
     float: right;
-    font-size: 120%;
+    font-size: 90%;
     font-family: Verdana,Geneva,sans-serif;
     padding: 0.5% 1.5% 1.5%;
 }
@@ -266,12 +259,13 @@ html{
 #popup_main_div {
     position: fixed;
     width: 40%;
-    height: 90%;
+    height: 80%;
     border:solid black;
     border-radius: 25px;
     background-color: gold;
     margin-left: 30%;
     margin-top: 3%;
+	overflow-y: auto; 
 }
 
 #close_popup_div{
@@ -325,6 +319,7 @@ html{
     margin-left: 2.5%;
     text-align:center;
     margin-top:-5%;
+	font-family: Verdana,Geneva,sans-serif;
 }
 
 .button3 {
@@ -363,6 +358,10 @@ html{
     li.a {
         border:none;
     }
+	
+	.button {
+		padding: 0 0 0 0; 
+	}
 }
 /*End of popup styles*/
 

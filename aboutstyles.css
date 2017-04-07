@@ -131,16 +131,6 @@ footer{
     padding: 25px;
 }
 
-.container {
-    border: solid black;
-    width: 80%;
-    margin: auto;
-    float: inherit;
-    padding: 20px;
-    background-color: white;
-    border-radius: 25px;
-}
-
 .em1 {
     font-variant: small-caps;
     font-size: 200%;
@@ -153,9 +143,13 @@ footer{
     font-family: Verdana,Geneva,sans-serif;
 }
 
-.image2 {
+.image {
     border: solid black;
+    margin-right:5%;
+    margin-left:5%;
+    width:90%;
 }
+
 
 /*Popup styles*/
 
@@ -169,7 +163,7 @@ footer{
     display: none;
 }
 
-#popup_main_div {
+#popupForm {
     position: fixed;
     width: 40%;
     height: 80%;
@@ -177,10 +171,11 @@ footer{
     border-radius: 25px;
     background-color: gold;
     margin-left: 30%;
-    margin-top: 3%;
+    margin-top: 5%;
+	overflow-y: auto;
 }
 
-#close_popup_div{
+#closePopup {
     position: absolute;
     width: 25px;
     height:25px;
@@ -193,13 +188,13 @@ footer{
     background-color: white;
 }
 
-#close_popup_div p {
+#closePopup p {
     margin-top:3px;
     font-family: sans-serif;
     font-weight: bold;
 }
 
-#close_popup_div:hover {
+#closePopup:hover {
     background-color: gold;
 }
 
@@ -257,7 +252,7 @@ footer{
 /*Smaller screen styles*/
 
 @media only screen and (max-width: 580px) {
-   #popup_main_div{
+   #popupForm{
        width: 90%;
        margin-left: 3%;
        margin-top: -10%;

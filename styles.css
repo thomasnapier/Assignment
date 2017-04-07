@@ -84,6 +84,7 @@ footer{
     padding: 0;
     font-variant: small-caps;
     font-weight: bold;
+    font-size:150%;
 }
 /*End of header styles*/
 
@@ -146,7 +147,6 @@ footer{
     margin-top: -32%;
     margin-bottom: 30%;
     text-align: center;
-    font-size: 120%;
     background-color: dodgerblue;
     font-family: Verdana,Geneva,sans-serif;
     float: left;
@@ -166,20 +166,19 @@ footer{
 .ladder{
     border: solid black;
     border-radius: 25px;
-    background-color: gold;
     border-collapse: collapse;
     width: 50%;
     margin: auto;
 	margin-top:30%;
     text-align: center;
     padding: 1.5%;
+    background-color: dodgerblue;
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-    background-color: dodgerblue;
     font-size: 110%;
 }
 th, td {
@@ -199,6 +198,15 @@ p.stand{
 table{
     width:100%;
 }
+
+tr:nth-child(even){
+    background-color: gold
+}
+
+tr:nth-child(odd){
+    background-color: white
+}
+
 /*End of table styles*/
 
 /*html styles*/
@@ -225,9 +233,9 @@ html{
 
 .button1 {
     background-color: white;
-    border: solid black;
+    border: 2px solid black;
     color: black;
-    padding: 4px 8px;
+    padding: 2px 4px;
     text-align: center;
     font-size: 80%;
     -webkit-transition-duration: 0.4s;
@@ -256,7 +264,7 @@ html{
     display: none;
 }
 
-#popup_main_div {
+#popupForm {
     position: fixed;
     width: 40%;
     height: 80%;
@@ -264,11 +272,11 @@ html{
     border-radius: 25px;
     background-color: gold;
     margin-left: 30%;
-    margin-top: 3%;
+    margin-top: 5%;
 	overflow-y: auto; 
 }
 
-#close_popup_div{
+#closePopup {
     position: absolute;
     width: 25px;
     height:25px;
@@ -281,13 +289,13 @@ html{
     background-color: white;
 }
 
-#close_popup_div p {
+#closePopup p {
     margin-top:3px;
     font-family: sans-serif;
     font-weight: bold;
 }
 
-#close_popup_div:hover {
+#closePopup:hover {
     background-color: gold;
 }
 
@@ -346,7 +354,7 @@ html{
 /*Smaller screen styles*/
 
 @media only screen and (max-width: 580px) {
-   #popup_main_div{
+   #popupForm{
        width: 90%;
        margin-left: 3%;
        margin-top: -10%;

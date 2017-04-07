@@ -5,13 +5,13 @@ ul.a {
     padding: 0;
     overflow: hidden;
     background-color: gold;
-    border-radius: 25px;
+    border-radius: 22px;
 }
 
 li.a{
     float: left;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 5.014%;
     border-left: solid black;
     display: block;
 }
@@ -58,6 +58,7 @@ li.a:first-child{
     padding: 0;
     font-variant: small-caps;
     font-weight: bold;
+    font-size:150%;
 }
 /*End of header styles*/
 
@@ -127,7 +128,7 @@ footer{
     display: none;
 }
 
-#popup_main_div {
+#popupForm {
     position: fixed;
     width: 40%;
     height: 80%;
@@ -135,10 +136,11 @@ footer{
     border-radius: 25px;
     background-color: gold;
     margin-left: 30%;
-    margin-top: 3%;
+    margin-top: 5%;
+	overflow-y: auto;
 }
 
-#close_popup_div{
+#closePopup {
     position: absolute;
     width: 25px;
     height:25px;
@@ -151,13 +153,13 @@ footer{
     background-color: white;
 }
 
-#close_popup_div p {
+#closePopup p {
     margin-top:3px;
     font-family: sans-serif;
     font-weight: bold;
 }
 
-#close_popup_div:hover {
+#closePopup:hover {
     background-color: gold;
 }
 
@@ -215,7 +217,7 @@ footer{
 /*Smaller screen styles*/
 
 @media only screen and (max-width: 580px) {
-   #popup_main_div{
+   #popupForm{
        width: 90%;
        margin-left: 3%;
        margin-top: -10%;

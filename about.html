@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>About Volleyball</title>
   <link rel="stylesheet" href="./css/aboutstyles.css" type="text/css">
+      <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="header">
@@ -13,13 +14,13 @@
       </div>
   </div>
       <div class="nav">
-          <ul class="a">
+         <ul class="a">
              <li class="a"><a href="index.html">Home</a></li>
              <li class="a"><a href="about.html">About Volleyball</a></li>
              <li class="a"><a href="contact.html">Contact</a></li>
-             <li class="a"><a href="signup.html">Sign Up</a></li>
-          </ul>
-      </div>
+             <li class="a"><a onclick = "OpenPopUp()">Sign Up</a></li>
+         </ul>
+    </div>
     <div class="about">
         <p>What Volleyball is all</p><p class="em">About</p>
     </div>
@@ -28,23 +29,79 @@
             <p class="em1">Who can play?</p>
             <p>There are <b>800 million players worldwide</b> who play volleyball at least once a week. Volleyball is a safe, fun and enjoyable sport that does not require extreme fitness. As such, it’s great for people who want a low-impact sport that will help them get fit without pushing them to their limit. The sport also adheres to the more competitive people as well because games can be highly exhilarating and intense. Beach volleyball is suitable for people of <b>all ages, men and women alike.</b> Anyone considering starting a new sport or exercise program should consult their doctor before participating.</p>
             <div class="container">
-                <img src="css/images/beach_volleyball_classic.jpg" class="image1">
-                <img src="css/images/spike.jpg" class="image2">
+                <img src="css/images/spike.jpg" class="image">
             </div>
         </div>
         <div class="volleyball">
             <p class="em1">About the game</p>
             <p>Volleyball is a <b>team orientated</b> sport played by two opposing teams on a playing court divided in the middle by a net.
 The sport originated in the United States, and is now just achieving the type of popularity in the U.S. that it has received on a global basis, where it ranks behind only soccer among participation sports. <br><br>
-                <b>The objective </b>of the game is for each team to <b>move the ball regularly</b> over the net to ground it on the opponent's court, all while preventing the ball from being grounded on theirs. The ball is put into play by the right back-row player who serves the ball by hitting it over the net to the opponent's court.<b>A team is allowed to hit the ball three times</b> (in addition to the block contact) to return it to the opponent's court. A player is not allowed to hit the ball twice consecutively, except when attempting a block. The rally continues until the ball touches the ground/floor, goes "out" or a team fails to return it to the opponent's court or commits a fault.<br><br>
+                <b>The objective </b>of the game is for each team to <b>move the ball regularly</b> over the net to ground it on the opponent's court, all while preventing the ball from being grounded on theirs. The ball is put into play by the right back-row player who serves the ball by hitting it over the net to the opponent's court.<b> A team is allowed to hit the ball three times</b> (in addition to the block contact) to return it to the opponent's court. A player is not allowed to hit the ball twice consecutively, except when attempting a block. The rally continues until the ball touches the ground/floor, goes "out" or a team fails to return it to the opponent's court or commits a fault.<br><br>
 
 The team who wins a rally, scores a point (Rally Point System). When the receiving team wins a rally, it gains a point and the right to serve, and its players rotate one position clockwise.
 The best of three or best of five games will win matches. Each non-deciding game will be won by the team that first scores 25 points with a minimum two-point advantage (no scoring cap). If there is a deciding game, it will be won by the team that first scores 15 points with a minimum two-point advantage (no scoring cap).
 </p>
         </div>
     </div>
+      <div id="popup">
+      <div id="popupForm">
+          <p id="heading">Sign Up</p>
+          <form>
+              <div class="form">
+                  <p><em>* fields are required</em></p>
+              <p>Contact person name: *</p><input type="text" id="name" placeholder="Your Name" required="required" tabindex="1" autofocus>
+              <p>Contact phone number: *</p><input type="tel" id="phone" placeholder="Your Number" required="required" tabindex="2">
+              <p>Contact email address: *</p><input type="email" id="email" placeholder="Your Email" required="required" tabindex="3">
+              <p>Competition day: *</p><select id="select" required tabindex="4">
+              <option selected></option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+          </select>
+              <p>Competition time: *</p><select id="select1" required tabindex="5">
+              <option selected></option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+          </select>
+              <p>Have you read and do you agree to <a class="button" onclick="OpenGuideLines()">our playing guidelines</a>?</p>
+                  <label>
+                      <input type="checkbox" required="required">
+                  </label>
+              </div>
+              <p id="hidden">Participants in Slammers Beach Volleyball play at their own risk. Anyone playing is responsible for their own safety and should only play if they are capable. Check with your doctor before you begin.
+Game fees must be paid prior to the start of the game. Games may be cancelled by players up to 4 hours before hand to get a refund. Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.
+</p>
+              <input type="submit" name="submit" value="Submit" class="button3">
+          </form>
+            <div id="closePopup" onclick="ClosePopUp()">
+                <p>X</p>
+            </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+      function OpenPopUp() {
+          document.getElementById("popup").style.display="block";
+      }
+
+      function ClosePopUp() {
+          document.getElementById("popup").style.display="none";
+      }
+  </script>
+  <script type="text/javascript">
+      function OpenGuideLines() {
+          var show = document.getElementById("hidden");
+          if (show.style.display === "none") {
+              show.style.display = "block";
+          } else {
+              show.style.display = "none";
+          }
+      }
+  </script>
     <div class="footer">
-       <footer>Copyright reserved @ Thomas Napier 2017</footer>
+       <footer>© Slammers Beach Volleyball 2017</footer>
     </div>
   </body>
 </html>

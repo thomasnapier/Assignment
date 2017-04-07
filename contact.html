@@ -11,15 +11,14 @@
           <img src="css/images/vector_volleyball.png">
           <p class="title">Slammers Beach Volleyball - Fun for all ages</p>
       </div>
-  </div>
-  <div class="nav">
-      <ul class="a">
-          <li class="a"><a href="index.html">Home</a></li>
-          <li class="a"><a href="about.html">About Volleyball</a></li>
-          <li class="a"><a href="contact.html">Contact</a></li>
-          <li class="a"><a href="signup.html">Sign Up</a></li>
-      </ul>
-  </div>
+     <div class="nav">
+         <ul class="a">
+             <li class="a"><a href="index.html">Home</a></li>
+             <li class="a"><a href="about.html">About Volleyball</a></li>
+             <li class="a"><a href="contact.html">Contact</a></li>
+             <li class="a"><a onclick = "OpenPopUp()">Sign Up</a></li>
+         </ul>
+    </div>
   <div class="container">
       <p class="title1">Contact Us</p>
       <p class="content">Phone Number: 4771 2233</p>
@@ -29,7 +28,64 @@
       <p class="content">Do not hesitate to contact us! We are more than happy to answer any queries or questions.</p>
   </div>
   <div class="footer">
-       <footer>Copyright reserved @ Thomas Napier 2017</footer>
+       <footer>© Slammers Beach Volleyball 2017</footer>
   </div>
+  <div id="popup">
+      <div id="popupForm">
+          <p id="heading">Sign Up</p>
+          <form>
+              <div class="form">
+                  <p><em>* fields are required</em></p>
+              <p>Contact person name: *</p><input type="text" id="name" placeholder="Your Name" required="required" tabindex="1" autofocus>
+              <p>Contact phone number: *</p><input type="tel" id="phone" placeholder="Your Number" required="required" tabindex="2">
+              <p>Contact email address: *</p><input type="email" id="email" placeholder="Your Email" required="required" tabindex="3">
+              <p>Competition day: *</p><select id="select" required tabindex="4">
+              <option selected></option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+          </select>
+              <p>Competition time: *</p><select id="select1" required tabindex="5">
+              <option selected></option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+          </select>
+              <p>Have you read and do you agree to <a class="button" onclick="OpenGuideLines()">our playing guidelines</a>?</p>
+                  <label>
+                      <input type="checkbox" required="required">
+                  </label>
+              </div>
+              <p id="hidden">Participants in Slammers Beach Volleyball play at their own risk. Anyone playing is responsible for their own safety and should only play if they are capable. Check with your doctor before you begin.
+Game fees must be paid prior to the start of the game. Games may be cancelled by players up to 4 hours before hand to get a refund. Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.
+</p>
+              <input type="submit" name="submit" value="Submit" class="button3">
+          </form>
+            <div id="closePopup" onclick="ClosePopUp()">
+                <p>X</p>
+            </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+      function OpenPopUp() {
+          document.getElementById("popup").style.display="block";
+      }
+
+      function ClosePopUp() {
+          document.getElementById("popup").style.display="none";
+      }
+  </script>
+  <script type="text/javascript">
+      function OpenGuideLines() {
+          var show = document.getElementById("hidden");
+          if (show.style.display === "none") {
+              show.style.display = "block";
+          } else {
+              show.style.display = "none";
+          }
+      }
+  </script>
   </body>
 </html>
